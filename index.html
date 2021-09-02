@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus Task</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+         .heading{
+            font-weight: bold;
+            padding: 45px 0 0 480px;
+            font-family: 'Times New Roman';
+            font-stretch: semi-condensed;
+            font-size: small;
+        }
+
+        #form-layout{
+            min-height: 100vh;
+            width: 90%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+         .image-section{
+            background: url(./img/man.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 40%;
+            height: 100vh;
+         }
+         .text-section{
+            width: 50%;
+            height: 100vh;
+            padding: 70px 0 0 5px;
+         }
+         
+         .contact-us{
+            height: 500px;
+            width: 60%;
+            margin: auto;
+            border: 5px;
+            padding: 40px 55px 3px;
+            border-radius: 5px 5px 5px 5px;
+            background-color: white;
+            position: center;
+            font-family: sans-serif;
+            box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+            0 12.5px 10px rgba(0, 0, 0, 0.035),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+            0 100px 80px rgba(0, 0, 0, 0.07);
+        }
+
+        .form-row{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+        }
+
+        .form-row .input-box{
+            width: 100%;
+        }
+
+        .form-row .input-box input[type="text"]{
+            width: 100%;
+            height: 40px;
+            padding: 5px 10px;
+        }
+
+        .button-section{
+            display: flex;
+            justify-content: flex-end;
+}
+
+        .button-section button{
+            background: blue;
+            padding: 8px 40px;
+            border: none;
+            color: white;
+}
+</style>
+<body style="background-color: rgb(245, 253, 253); height: auto;">
+    <div class="heading">
+        <h1>Welcome</h1>
+    </div>
+    <section id="form-layout">
+        <div class="image-section"></div>
+        <div class="text-section">
+            <h1 style="padding: 0 0 5px 80px; font-weight: 500; font-family: sans-serif; font-stretch: semi-condensed;">Who we Are?</h1>
+            <br>
+            <h3 style="padding: 95px 0 0 0;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Corrupti repellendus quo tempore hic laborum mollitia ex 
+                praesentium officia vel excepturi dolorum voluptates, officiis 
+                dolores alias! Cum, debitis unde ipsa eum necessitatibus itaque 
+                temporibus voluptatum sit libero accusantium nihil. Quaerat maxime 
+                repellat mollitia, libero soluta reprehenderit officia veritatis 
+                voluptatum nesciunt porro culpa doloribus ullam et error? 
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Corrupti repellendus quo tempore hic laborum mollitia ex 
+                praesentium officia vel excepturi dolorum voluptates, officiis 
+                dolores alias! Cum, debitis unde ipsa eum necessitatibus itaque 
+                temporibus voluptatum sit libero accusantium nihil. Quaerat maxime 
+                repellat mollitia, libero soluta reprehenderit officia veritatis 
+                voluptatum nesciunt porro culpa doloribus ullam et error? 
+            </h3>
+        </div> 
+    </section>
+    <div class="contact-us">
+        <h1>Contact Us</h1>
+        <br>
+        <br>
+        <form action="">
+            <div class="form-row">
+                <div class="input-box">
+                    <label for="">First Name</label><br>
+                    <input type="text"></input>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-box">
+                    <label for="">Last Name</label><br>
+                    <input type="text"></input>
+                </div>
+            </div>
+            <div class="form-row">
+            <div class="input-box">
+                <label for="">Your Message<br>
+                <input type="text" style="height: 150px;"></input>
+            </div>
+            </div>
+            <div class="button-section">
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
